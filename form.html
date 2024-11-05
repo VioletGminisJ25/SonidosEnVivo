@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="style2.css" />
+		<title>Conciertos y eventos musicales</title>
+	</head>
+	<body>
+		<header style="position: sticky !important">
+			<picture
+				><img src="resources/logo-vectorizado.svg" alt="logo"
+			/></picture>
+			<ul>
+				<a class="link" href="index.html"><li>Inicio</li></a>
+				<a class="link" href="eventos.php"><li>Eventos</li></a>
+				<a class="link" href="contacto.html"><li>Contacto</li></a>
+			</ul>
+		</header>
+
+		<div id="box-out">
+			<div id="box-in" class="boxies">
+				<div class="boxies">
+					<h2>Registrar eventos</h2>
+					<form action="crear.php" method="post">
+						<div class="box">
+							<label for="nombre">Nombre de Evento: </label>
+							<input type="text" name="nombre" id="nombre" />
+						</div>
+						<div class="box">
+							<label for="fecha">Fecha: </label>
+							<input type="date" name="fecha" id="fecha" />
+						</div>
+						<div class="box">
+							<label for="localizacion">Localizacion: </label>
+							<input
+								type="text"
+								name="localizacion"
+								id="localizacion"
+							/>
+						</div>
+
+						<label for="ubicacion">Ubicacion: </label>
+						<div class="box">
+							<p>Aire Libre:</p>
+							<input
+								type="radio"
+								name="ubicacion"
+								id="aireLibre"
+								value="aireLibre"
+							/>
+						</div>
+						<div class="box">
+							<p>Teatro:</p>
+							<input
+								type="radio"
+								name="ubicacion"
+								id="teatro"
+								value="teatro"
+							/>
+						</div>
+						<div class="box">
+							<p>Auditorio:</p>
+							<input
+								type="radio"
+								name="ubicacion"
+								id="auditorio"
+								value="auditorio"
+							/>
+						</div>
+						<div class="box">
+							<p>Sala:</p>
+							<input
+								type="radio"
+								name="ubicacion"
+								id="sala"
+								value="sala"
+							/>
+						</div>
+						<div class="box">
+							<label for="artistas">Artistas: </label>
+							<input type="text" name="artistas" id="artistas" />
+						</div>
+
+						<label for="generos">Generos: </label>
+						<div class="box">
+							<p>Rock:</p>
+							<input
+								type="checkbox"
+								name="generos[]"
+								id="Rock"
+								value="Rock"
+							/>
+						</div>
+
+						<div class="box">
+							<p>Punk:</p>
+							<input
+								type="checkbox"
+								name="generos[]"
+								id="Punk"
+								value="Punk"
+							/>
+						</div>
+						<div class="box">
+							<p>Metal:</p>
+							<input
+								type="checkbox"
+								name="generos[]"
+								id="Metal"
+								value="Metal"
+							/>
+						</div>
+						<div class="box">
+							<p>Clásico:</p>
+							<input
+								type="checkbox"
+								name="generos[]"
+								id="Clasico"
+								value="Clasico"
+							/>
+						</div>
+						<div class="box">
+							<p>Urbano:</p>
+							<input
+								type="checkbox"
+								name="generos[]"
+								id="Urbano"
+								value="Urbano"
+							/>
+						</div>
+						<div class="box">
+							<p>Reagge:</p>
+							<input
+								type="checkbox"
+								name="generos[]"
+								id="Reagge"
+								value="Reagge"
+							/>
+						</div>
+						<input
+							type="submit"
+							class="button-28"
+							role="button"
+							value="Registrar evento"
+						/>
+					</form>
+				</div>
+				<form action="eventos.php" method="post">
+					<input
+						class="button-28"
+						role="button"
+						type="submit"
+						value="Mostrar eventos"
+					/>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
