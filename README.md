@@ -1,4 +1,4 @@
-#PROYECTO PHP Y BASES DE DATOS
+# PROYECTO PHP Y BASES DE DATOS
 
 El video fue necesario comprimirlo para subirlo en github por el tamaño y la calidad se vio afectada
 
